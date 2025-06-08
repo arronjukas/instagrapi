@@ -18,6 +18,7 @@ python -m pip install instagrapi
 * [Interactions](usage-guide/interactions.md)
 * [Handle Exceptions](usage-guide/handle_exception.md)
 * [Challenge Resolver](usage-guide/challenge_resolver.md)
+* [Headless Ubuntu VM Guide](usage-guide/headless_ubuntu_vm.md)
 * [Exceptions](exceptions.md)
 
 [docs-main]: index.md
