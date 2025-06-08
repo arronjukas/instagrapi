@@ -108,6 +108,24 @@ cl = Client()
 cl.login_by_sessionid("<your_sessionid>")
 ```
 
+### Headless Ubuntu VM Example
+
+`instagrapi` can run entirely from the terminal. The
+[Headless Ubuntu VM guide](docs/usage-guide/headless_ubuntu_vm.md)
+explains how to configure Python and install dependencies in a
+GUI-less environment. Example scripts are located in
+`examples/headless_vm` and include helpers for session persistence,
+challenge handling and proxy configuration.
+
+To test the automation framework:
+
+```bash
+cp examples/headless_vm/.env.example examples/headless_vm/.env
+# edit the file with your credentials
+source examples/headless_vm/.env
+python3 examples/headless_vm/instagram_automation.py
+```
+
 ### List and download another user's posts
 
 ``` python
