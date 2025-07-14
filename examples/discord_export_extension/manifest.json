@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Discord Chat Exporter",
+  "description": "Export current Discord chat history in reverse order.",
+  "version": "0.1",
+  "permissions": ["downloads"],
+  "host_permissions": ["https://discord.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Export Discord Chat"
+  }
+}
